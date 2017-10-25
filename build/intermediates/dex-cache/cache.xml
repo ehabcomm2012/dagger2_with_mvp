@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/ehab/AndroidStudioProjects/UPS_company/dagger2_with_mvp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7caed9c9a76a688cfa118ef2f568bbe9d200a1f8">
+        <dex dex="/home/ehab/AndroidStudioProjects/UPS_company/dagger2_with_mvp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_81f846644c7da0c2a68774cc153bc109d358e713/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ehab/AndroidStudioProjects/UPS_company/dagger2_with_mvp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/ehab/AndroidStudioProjects/UPS_company/dagger2_with_mvp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_94853be9f6edb8a1fa006560220eea44582a3426/classes.dex" />
+    </item>
+
+</items>
