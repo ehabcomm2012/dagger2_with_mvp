@@ -5,12 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.example.ehab.dagger2withmvp.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.ehab.dagger2withmvp.activities.mainActivity.MainActivity">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data fetched from server : https://api.stackexchange.com/2.2/answers?order=desc&amp;sort=activity&amp;site=stackoverflow"
+        android:padding="@dimen/size_5dp"
+        />
 
     <TextView
+        android:id="@+id/tvFetchedData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="------"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_17sp"
         />
 
 </LinearLayout>
