@@ -12,7 +12,6 @@ import javax.inject.Inject;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 /**
  * Created by ehab on 10/26/17.
@@ -22,23 +21,21 @@ public class MainActivityPresenter {
     public static final String TAG = "mainPresTag";
     @Inject
     ApiInterface mApiInterface;
-    @Inject
-    Retrofit retrofit;
     private Context mContext;
     private MainActivityView view;
     private MainActivityModel mainActivityModel;
-private MainActivityModel modelActions ;
+
     public MainActivityPresenter(Context context, MainActivityView view) {
         this.mContext = context;
         this.view = view;
         ((MyApplication) ((MainActivity) context).getApplication()).getDaggerMainComponent(context, view).inject(this);
-        mainActivityModel=new MainActivityModel();
+        mainActivityModel = new MainActivityModel();
     }
 
     public void getAnswers() {
         view.showLoading();
 
-        mainActivityModel.getAnswers(mApiInterface,new Callback<SOAnswersResponse>() {
+        mainActivityModel.getAnswers(mApiInterface, new Callback<SOAnswersResponse>() {
             @Override
             public void onResponse(Call<SOAnswersResponse> call, Response<SOAnswersResponse> response) {
                 view.hideLoading();

@@ -27,7 +27,6 @@ public class MainActivityPresenterModule {
 
 
     @Provides
-    @Singleton
     MainActivityPresenter provideFoodzPresenter() {
         return new MainActivityPresenter(context,  mainActivityView);
     }
